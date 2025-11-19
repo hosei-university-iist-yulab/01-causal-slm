@@ -1,0 +1,106 @@
+# Causal SLM Requirements
+# Topic 1: Causal Language Models for Temporal Sensor Sequences
+
+# ============================================
+# Core Dependencies
+# ============================================
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+
+# ============================================
+# Multiple LLMs (2+ models)
+# ============================================
+transformers>=4.35.0  # HuggingFace (GPT-2, LLaMA, Mistral)
+peft>=0.7.0  # Parameter-efficient fine-tuning (LoRA)
+accelerate>=0.24.0  # Multi-GPU training
+bitsandbytes>=0.41.0  # Quantization for efficient inference
+
+# Specific LLM implementations
+sentencepiece>=0.1.99  # For LLaMA tokenization
+protobuf>=3.20.0  # For model serialization
+
+# ============================================
+# Causal Inference Libraries
+# ============================================
+# PCMCI for time series causal discovery
+tigramite>=5.2.0
+
+# DoWhy for causal inference
+dowhy>=0.10.0
+
+# CausalNex for Bayesian networks
+causalnex>=0.11.0
+
+# NetworkX for graph operations
+networkx>=3.1
+
+# ============================================
+# Data Processing
+# ============================================
+# Time series processing
+tslearn>=0.6.0
+statsmodels>=0.14.0
+
+# Data handling
+pyarrow>=14.0.0  # Fast dataframe operations
+h5py>=3.9.0  # HDF5 for large datasets
+
+# ============================================
+# Evaluation & Metrics
+# ============================================
+# NLP metrics for narrative evaluation
+nltk>=3.8.0
+rouge-score>=0.1.2
+bert-score>=0.3.13
+
+# Statistical testing
+pingouin>=0.5.3  # Advanced statistical tests
+statsmodels>=0.14.0
+
+# ============================================
+# Visualization
+# ============================================
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.17.0
+graphviz>=0.20.0  # For causal graph visualization
+
+# ============================================
+# Experiment Tracking & Logging
+# ============================================
+tensorboard>=2.14.0
+wandb>=0.16.0  # Weights & Biases (optional)
+
+# ============================================
+# Development Tools
+# ============================================
+jupyter>=1.0.0
+ipywidgets>=8.1.0
+ipython>=8.15.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Code quality
+black>=23.7.0  # Code formatter
+flake8>=6.1.0  # Linter
+mypy>=1.5.0  # Type checker
+
+# ============================================
+# Utility Libraries
+# ============================================
+tqdm>=4.66.0  # Progress bars
+python-dotenv>=1.0.0  # Environment variables
+pyyaml>=6.0  # Configuration files
+jsonlines>=4.0.0  # JSONL file handling
+
+# ============================================
+# Optional: Cloud & Data Access
+# ============================================
+# boto3>=1.28.0  # AWS S3 access (if needed)
+# google-cloud-storage>=2.10.0  # GCS access (if needed)

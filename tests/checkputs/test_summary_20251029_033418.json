@@ -1,0 +1,99 @@
+{
+  "timestamp": "20251029_033418",
+  "total_tests": 10,
+  "passed": 8,
+  "failed": 2,
+  "success_rate": "80.0%",
+  "results": [
+    {
+      "name": "test_imports",
+      "command": "python -c \"import torch; import transformers; import numpy; import pandas; print('All imports successful')\"",
+      "success": true,
+      "return_code": 0,
+      "duration_seconds": 5.798262,
+      "timestamp": "2025-10-29T03:34:18.560556",
+      "output_file": "tests/checkputs/test_imports_20251029_033418.log"
+    },
+    {
+      "name": "test_dataset_generation",
+      "command": "python scripts/generate_datasets.py",
+      "success": true,
+      "return_code": 0,
+      "duration_seconds": 2.390065,
+      "timestamp": "2025-10-29T03:34:24.361188",
+      "output_file": "tests/checkputs/test_dataset_generation_20251029_033418.log"
+    },
+    {
+      "name": "test_csm_quick",
+      "command": "python -c \"import sys; sys.path.insert(0, 'src'); from innovations.causal_score_matching import CausalScoreMatching, CSMConfig; import numpy as np; data = np.random.randn(100, 3); csm = CausalScoreMatching(CSMConfig(n_epochs=10, device='cpu')); graph = csm.discover_graph(data); print(f'CSM test passed: discovered {np.sum(graph > 0)} edges')\"",
+      "success": false,
+      "return_code": 1,
+      "duration_seconds": 2.110032,
+      "timestamp": "2025-10-29T03:34:26.753924",
+      "output_file": "tests/checkputs/test_csm_quick_20251029_033418.log"
+    },
+    {
+      "name": "test_llm_loading",
+      "command": "python scripts/test_llm_loading.py",
+      "success": true,
+      "return_code": 0,
+      "duration_seconds": 19.209225,
+      "timestamp": "2025-10-29T03:34:28.866723",
+      "output_file": "tests/checkputs/test_llm_loading_20251029_033418.log"
+    },
+    {
+      "name": "test_end_to_end",
+      "command": "python scripts/quick_end_to_end_test.py",
+      "success": true,
+      "return_code": 0,
+      "duration_seconds": 27.216838,
+      "timestamp": "2025-10-29T03:34:48.078813",
+      "output_file": "tests/checkputs/test_end_to_end_20251029_033418.log"
+    },
+    {
+      "name": "test_figure_generation",
+      "command": "python -c \"import matplotlib; matplotlib.use('Agg'); import matplotlib.pyplot as plt; fig, ax = plt.subplots(); ax.plot([1,2,3]); plt.savefig('tests/checkputs/test_plot.png'); print('Figure generation test passed')\"",
+      "success": true,
+      "return_code": 0,
+      "duration_seconds": 0.831611,
+      "timestamp": "2025-10-29T03:35:15.298994",
+      "output_file": "tests/checkputs/test_figure_generation_20251029_033418.log"
+    },
+    {
+      "name": "test_json_outputs",
+      "command": "python -c \"import json; from pathlib import Path; outputs = list(Path('output/evaluations').glob('*.json')); print(f'Found {len(outputs)} JSON files'); [json.load(open(f)) for f in outputs[:3]]; print('All JSON files valid')\"",
+      "success": true,
+      "return_code": 0,
+      "duration_seconds": 0.045626,
+      "timestamp": "2025-10-29T03:35:16.133570",
+      "output_file": "tests/checkputs/test_json_outputs_20251029_033418.log"
+    },
+    {
+      "name": "test_latex_tables",
+      "command": "python -c \"from pathlib import Path; tex_file = Path('output/paper_tables/COMPREHENSIVE_LATEX_TABLES.tex'); content = tex_file.read_text(); assert '\\\\begin{document}' in content; assert '\\\\end{document}' in content; print(f'LaTeX tables valid: {len(content)} chars')\"",
+      "success": false,
+      "return_code": 1,
+      "duration_seconds": 0.041512,
+      "timestamp": "2025-10-29T03:35:16.182482",
+      "output_file": "tests/checkputs/test_latex_tables_20251029_033418.log"
+    },
+    {
+      "name": "test_figure_files",
+      "command": "python -c \"from pathlib import Path; figures = list(Path('output/figures').glob('*.pdf')); print(f'Found {len(figures)} PDF figures'); assert len(figures) >= 12, f'Expected 12+ figures, found {len(figures)}'; print('All figure files present')\"",
+      "success": true,
+      "return_code": 0,
+      "duration_seconds": 0.031942,
+      "timestamp": "2025-10-29T03:35:16.226987",
+      "output_file": "tests/checkputs/test_figure_files_20251029_033418.log"
+    },
+    {
+      "name": "test_syntax_check",
+      "command": "python -m py_compile scripts/*.py",
+      "success": true,
+      "return_code": 0,
+      "duration_seconds": 0.162184,
+      "timestamp": "2025-10-29T03:35:16.261929",
+      "output_file": "tests/checkputs/test_syntax_check_20251029_033418.log"
+    }
+  ]
+}
