@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Integration tests for CSM and CCLT components.
+Validates compatibility and performance of combined system.
+Tests gradient flow and training stability.
+"""
+
 import torch
 import torch.nn as nn
 import numpy as np

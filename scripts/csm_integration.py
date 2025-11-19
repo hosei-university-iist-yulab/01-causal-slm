@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Integration module for Causal Score Matching.
+Connects CSM with downstream components.
+Handles causal graph preprocessing.
+"""
+
 import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))

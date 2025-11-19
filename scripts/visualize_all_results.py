@@ -6,6 +6,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Visualization utilities for experimental results.
+Creates plots for causal discovery accuracy, intervention prediction, and narrative quality.
+Supports multiple output formats (PDF, PNG, interactive HTML).
+"""
+
 import re
 import json
 import pandas as pd

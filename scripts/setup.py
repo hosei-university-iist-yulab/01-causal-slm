@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Setup script for CSLM framework installation.
+Handles dependencies and environment configuration.
+Validates installation correctness.
+"""
+
 from setuptools import setup, find_packages
 
 with open("README.md", "r", encoding="utf-8") as fh:

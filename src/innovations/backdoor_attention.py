@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Implementation of Backdoor-Adjusted Attention (BAT) mechanism.
+Modifies transformer attention to explicitly encode Pearl's backdoor criterion.
+Provably prevents spurious correlations in causal reasoning.
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

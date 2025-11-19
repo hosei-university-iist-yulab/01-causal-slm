@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Complete multi-LLM ensemble system with causal grounding.
+Integrates CSM, BAT, and CCLT for causally-grounded explanations.
+Supports multiple LLM backbones (GPT-2, LLaMA-2, Mistral).
+"""
+
 import torch
 import torch.nn as nn
 from transformers import (

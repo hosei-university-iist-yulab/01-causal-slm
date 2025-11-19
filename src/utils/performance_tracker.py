@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Utilities for tracking experiment performance metrics.
+Logs F1 scores, MAE, SHD, and other evaluation metrics.
+Supports visualization and statistical analysis.
+"""
+
 import time
 import psutil
 import os

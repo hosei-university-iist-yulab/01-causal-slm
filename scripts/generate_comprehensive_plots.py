@@ -6,6 +6,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Generates comprehensive plots for all experimental results.
+Creates multi-panel figures and comparative visualizations.
+Supports both print and digital formats.
+"""
+
 import json
 import numpy as np
 import matplotlib.pyplot as plt

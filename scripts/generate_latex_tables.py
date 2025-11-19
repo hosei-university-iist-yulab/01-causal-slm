@@ -6,6 +6,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Generates LaTeX tables for paper from experimental results.
+Formats data according to conference style guidelines.
+Produces camera-ready tables.
+"""
+
 import json
 import glob
 from pathlib import Path

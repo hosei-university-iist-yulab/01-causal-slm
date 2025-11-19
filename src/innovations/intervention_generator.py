@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Generates synthetic interventions for causal reasoning experiments.
+Creates do(X=x) scenarios for evaluating intervention prediction accuracy.
+Supports multiple sensor domains and intervention types.
+"""
+
 import torch
 import numpy as np
 from typing import Dict, List, Tuple, Optional, Callable

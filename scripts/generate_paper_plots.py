@@ -6,6 +6,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Generates all plots and figures for paper submission.
+Creates publication-quality PDF and PNG outputs.
+Includes performance comparisons, ablation results, and architecture diagrams.
+"""
+
 import json
 import pandas as pd
 import plotly.graph_objects as go

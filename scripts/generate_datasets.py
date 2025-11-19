@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Generates synthetic datasets with known ground-truth causal structures.
+Creates HVAC, industrial, and environmental sensor scenarios.
+Includes SCM specifications and intervention points.
+"""
+
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta

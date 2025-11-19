@@ -6,6 +6,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Test suite runner for CSLM framework.
+Executes unit tests, integration tests, and regression tests.
+Validates correctness of all components.
+"""
+
 import sys
 import os
 from pathlib import Path

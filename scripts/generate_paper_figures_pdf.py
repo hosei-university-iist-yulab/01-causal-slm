@@ -6,6 +6,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Generates publication-ready PDF figures for paper.
+Optimized for conference submission requirements.
+Includes all experimental results and visualizations.
+"""
+
 import re
 import json
 import pandas as pd

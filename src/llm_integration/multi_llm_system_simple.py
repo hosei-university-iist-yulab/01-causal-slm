@@ -5,6 +5,11 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Simplified version of multi-LLM causal system for quick prototyping.
+Reduced complexity while maintaining core causal reasoning capabilities.
+"""
+
 import torch
 import torch.nn as nn
 from transformers import AutoTokenizer, AutoModelForCausalLM, GPT2LMHeadModel, GPT2Tokenizer

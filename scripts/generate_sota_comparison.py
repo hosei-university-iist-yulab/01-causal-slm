@@ -6,6 +6,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Generates SOTA comparison results for paper.
+Compares CSLM against PCMCI, NOTEARS, Granger causality.
+Produces tables and visualizations for publication.
+"""
+
 import re
 import json
 import pandas as pd

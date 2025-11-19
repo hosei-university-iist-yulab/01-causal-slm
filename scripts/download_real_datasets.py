@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Downloads and preprocesses real-world sensor datasets.
+Sources: ETTh1, NASA turbofan, OpenAQ air quality data.
+Validates data integrity and extracts causal ground truth.
+"""
+
 import pandas as pd
 import numpy as np
 import os

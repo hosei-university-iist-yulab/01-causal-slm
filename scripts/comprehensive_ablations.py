@@ -6,6 +6,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Runs comprehensive ablation studies for all CSLM components.
+Tests CSM, BAT, CCLT individually and in combination.
+Generates comparison tables and statistical analyses.
+"""
+
 import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))

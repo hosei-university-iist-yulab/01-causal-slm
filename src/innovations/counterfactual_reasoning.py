@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Implementation of Counterfactual Consistency Loss (CCLT) training objective.
+Enforces Pearl's 3-step counterfactual algorithm: abduction, action, prediction.
+Provides formal consistency guarantees for LLM counterfactual reasoning.
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

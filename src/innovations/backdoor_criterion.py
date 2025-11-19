@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Implementation of Pearl's backdoor criterion for causal inference.
+Identifies valid adjustment sets for estimating causal effects.
+Used by BAT to construct attention masks.
+"""
+
 import numpy as np
 from typing import Set, List, Tuple, Optional
 from dataclasses import dataclass

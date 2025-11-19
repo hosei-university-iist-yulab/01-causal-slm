@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Ablation study experiments for CSLM components.
+Tests impact of removing CSM, BAT, or CCLT.
+Quantifies contribution of each innovation.
+"""
+
 import torch
 import torch.nn as nn
 import numpy as np

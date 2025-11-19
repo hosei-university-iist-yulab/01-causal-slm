@@ -5,6 +5,12 @@ Date: November 14, 2025
 Repo: https://github.com/hosei-university-iist-yulab/01-causal-slm.git
 """
 
+"""
+Complete end-to-end evaluation of CSLM framework.
+Runs causal discovery, intervention prediction, and narrative generation.
+Includes human evaluation protocol.
+"""
+
 import torch
 import numpy as np
 from typing import Dict, List
